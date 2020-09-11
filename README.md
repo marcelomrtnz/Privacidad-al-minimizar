@@ -24,7 +24,9 @@ Las extensiones pueden tener 3 elementos, que están incomunicados directamente 
 * **WebPack**: Reduce el tamaño del empaquetado, y compila TypeScript a JavaScript.
 
 
+
 ## Cómo ejecutar el código
+### Si querés ver el código fuente, andá a la carpeta src/. eventPage.ts corresponde al background, contentescript.ts al contentscript, y /popup/Popup al componente de React del pupop.
 (Suponiendo que ya tenés NodeJS y Git instalados)
 1. ``` git clone https://github.com/marcelomrtnz/Privacidad-al-minimizar.git ```
 2. ``` npm install ``` para instalar todas las dependencias. 
