@@ -15,8 +15,20 @@ chrome.tabs.onCreated.addListener( tab => {
 
 })
 
+chrome.tabs.onHighlighted.addListener( (hlinfo) => {
+    chrome.tabs.query( { active: true, currentWindow: true }, tab => {
+        console.log({tab})
+        const url = conseguir_dominio_sitio_actual( tab[0].url )
+        chrome.storage.sync.get([url], storage => {
+            const deshabilitar_permitir_conocer_minimizado = storage[url]
+            if ( deshabilitar_permitir_conocer_minimizado ) return chrome.browserAction.setIcon({ path: "../icon16cheque.png" })
+            return chrome.browserAction.setIcon({ path: "../icon16.png" })
+        })
+    })
+})
 
 function conseguir_dominio_sitio_actual(url: any, subdomain?: string|false) {
+    console.log({url})
     subdomain = subdomain || false;
 
     url = url.replace(/(https?:\/\/)?(www.)?/i, '');
