@@ -15,11 +15,13 @@ chrome.tabs.onCreated.addListener( tab => {
 
 })
 
-chrome.tabs.onHighlighted.addListener( (hlinfo) => {
+//Escuchamos a cada vez que el usuario cambia de pestaña
+chrome.tabs.onHighlighted.addListener( () => {
     chrome.tabs.query( { active: true, currentWindow: true }, tab => {
-        console.log({tab})
+        //buscamos la pestaña actual del usuario
         const url = conseguir_dominio_sitio_actual( tab[0].url )
         chrome.storage.sync.get([url], storage => {
+            //vemos si tiene habilitada la opción. Si es así, se cambia el icono
             const deshabilitar_permitir_conocer_minimizado = storage[url]
             if ( deshabilitar_permitir_conocer_minimizado ) return chrome.browserAction.setIcon({ path: "../icon16cheque.png" })
             return chrome.browserAction.setIcon({ path: "../icon16.png" })

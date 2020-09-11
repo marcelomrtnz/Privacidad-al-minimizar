@@ -1,5 +1,11 @@
 # Privacidad al minimizar
 
+## ¿Cómo instalar la extensión?
+1. Ir a ``` chrome://extensions ``` en la barra de URLs de tu navegador.
+2. Activar el "Modo de desarrollador" que se encuentra en la esquina superior derecha.
+3. Presionar "Cargar descomprimida".
+4. Seleccionar la carpeta ```/dist``` del proyecto.
+
 ## ¿Por qué del proyecto?
 Los navegadores tienen una [API que le permite a las aplicaciones web saber si estás en ellas o no](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API), llamada Page Visibility API. 
 Los navegadores no tienen una forma nativa de evitar este comportamiento, por lo que hay que recurrir a una extensión para inhabilitarlo.
