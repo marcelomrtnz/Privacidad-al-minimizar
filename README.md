@@ -23,10 +23,24 @@ Las extensiones pueden tener 3 elementos, que están incomunicados directamente 
 * **TypeScript**: Es mi primera vez utilizando TypeScript, quería "estrenarlo" en un proyecto pequeño, y creo que vale totalmente la pena utilizarlo, ahorra bastantes bugs, los types ayudan bastante a no tener que volver a leer varias veces el mismo trozo de código para ver qué retorna una función y sus argumentos, y utilizarlo con VSCode mejora muchísimo la experiencia al programar.
 * **WebPack**: Reduce el tamaño del empaquetado, y compila TypeScript a JavaScript.
 
+
+## Cómo ejecutar el código
+(Suponiendo que ya tenés NodeJS y Git instalados)
+1. ``` git clone https://github.com/marcelomrtnz/Privacidad-al-minimizar.git ```
+2. ``` npm install ``` para instalar todas las dependencias. 
+3. ``` npm run dev ``` para compilar.
+
+## Ayuda para hacer extensiones: 
+* **[The Coding Train](https://www.youtube.com/watch?v=hkOTAmmuv_4)** explica toda la teoría necesaria.
+* **[Tutorial de Chrome Developers](https://developer.chrome.com/getstarted#:~:text=Open%20the%20Extension%20Management%20page,More%20Tools%20then%20selecting%20Extensions.)**
+
 ### Este proyecto empezó con [el boilerplate (o plantilla)](https://github.com/martellaj/chrome-extension-react-typescript-boilerplate) hecha por @martellaj.
 
 ### Extras:
 * **[¿Cómo deshabilitar la Page Visibility API?](https://stackoverflow.com/questions/9515704/insert-code-into-the-page-context-using-a-content-script?rq=1)**
+
+
+
 
 Hecho por [Marcelo Martínez](https://github.com/marcelomrtnz) @marcelomrtnz
 
