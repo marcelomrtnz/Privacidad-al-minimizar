@@ -1,10 +1,11 @@
 # Privacidad al minimizar
 
 ## ¿Cómo instalar la extensión?
-1. Ir a ``` chrome://extensions ``` en la barra de URLs de tu navegador.
-2. Activar el "Modo de desarrollador" que se encuentra en la esquina superior derecha.
-3. Presionar "Cargar descomprimida".
-4. Seleccionar la carpeta ```/dist``` del proyecto.
+1. Descargar el proyecto.
+2. Ir a ``` chrome://extensions ``` en la barra de URLs de tu navegador.
+3. Activar el "Modo de desarrollador" que se encuentra en la esquina superior derecha.
+4. Presionar "Cargar descomprimida".
+5. Ir al proyecto y seleccionar la carpeta ```/dist```.
 
 ## ¿Por qué del proyecto?
 Los navegadores tienen una [API que le permite a las aplicaciones web saber si estás en ellas o no](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API), llamada Page Visibility API. 
@@ -50,6 +51,6 @@ Las extensiones pueden tener 3 elementos, que están incomunicados directamente 
 
 
 
-Hecho por [Marcelo Martínez](https://github.com/marcelomrtnz) @marcelomrtnz
+&copy; Hecho por [Marcelo Martínez](https://github.com/marcelomrtnz) @marcelomrtnz
 
 ( Mi primer proyecto Open Source :D )
