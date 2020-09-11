@@ -1,0 +1,48 @@
+{
+  "name": "privacidad-al-minimizar",
+  "version": "1.0.0",
+  "description": "Esta extensión evita que páginas y sitios web sepan si estás en su pestaña o no.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack --config webpack.dev.js",
+    "watch": "webpack -w --config webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelomrtnz/Privacidad-al-minimizar.git"
+  },
+  "keywords": [
+    "Chrome",
+    "extensions",
+    "PageVisibility",
+    "privacy",
+    "privacidad"
+  ],
+  "author": "Marcelo Martinez (github: marcelomrtnz)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.60",
+    "@types/react": "^16.9.32",
+    "@types/react-dom": "^16.9.6",
+    "css-loader": "^3.4.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "ts-loader": "^4.0.1",
+    "typescript": "^3.8.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "fontsource-roboto": "^3.0.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "bugs": {
+    "url": "https://github.com/marcelomrtnz/Privacidad-al-minimizar/issues"
+  },
+  "homepage": "https://github.com/marcelomrtnz/Privacidad-al-minimizar#readme"
+}

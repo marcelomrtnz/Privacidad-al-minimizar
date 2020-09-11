@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let veces_salidas_de_pestania = 0
+
+        document.addEventListener("visibilitychange", ( event ) => {
+
+            const texto = document.getElementById("text-prueba")
+            texto.innerText = event.target.visibilityState
+            console.log({ event })
+
+            if ( event.target.visibilityState !== "visible" ) {
+                veces_salidas_de_pestania++
+    
+                const veces_salidas = document.getElementById("veces-salidas")
+                veces_salidas.innerText = veces_salidas_de_pestania
+    
+                console.log({ veces_salidas_de_pestania  })
+            }
+            
+        })
+    </script>
+
+    <h3 id="text-prueba">
+       Prueba html 
+    </h3>
+    <h2>Veces salidas de pestaña: <span id="veces-salidas">0</span> </h2>
+    
+</body>
+</html>
