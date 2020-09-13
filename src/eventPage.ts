@@ -46,22 +46,15 @@ chrome.tabs.onHighlighted.addListener( () => {
     })
 })
 
-function conseguir_dominio_sitio_actual(url: any, subdomain?: string|false) {
-    console.log({url})
-    subdomain = subdomain || false;
-
-    url = url.replace(/(https?:\/\/)?(www.)?/i, '');
-
-    if (!subdomain) {
-        url = url.split('.');
-
-        url = url.slice(url.length - 2).join('.');
-    }
-
-    if (url.indexOf('/') !== -1) {
-        return url.split('/')[0];
-    }
-
-    return url;
+function conseguir_dominio_sitio_actual( url: string ) {
+    const index_inicio_dominio = url.indexOf("://") + 3
+    
+    let index_final_dominio = url.indexOf("/", index_inicio_dominio)
+    
+    if ( index_final_dominio < 0 ) index_final_dominio = url.length
+    
+    const url_cortado = url.substring( index_inicio_dominio, index_final_dominio )
+    
+    return url_cortado
 }
-//https://stackoverflow.com/a/30877431/8937005
+// github.com/marcelomrtnz

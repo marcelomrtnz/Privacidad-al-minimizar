@@ -34,3 +34,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 // esto, indicándole que se abrió una nueva página. En el contentscript vemos si el usuario
 //tiene ya una preferencia guardada 
 chrome.runtime.sendMessage("nuevo-contentscript")
+
+
+
+// github.com/marcelomrtnz
